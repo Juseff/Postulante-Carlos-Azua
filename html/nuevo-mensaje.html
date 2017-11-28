@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webmail</title>
+	<script src="js/editor/ckeditor.js"></script>
+	<script src="js/editor/sample.js"></script>
+	<link rel="stylesheet" href="js/editor/samples.css">
+	<link rel="stylesheet" href="js/editor/neo.css">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<div id="top">
+	<div class="user">
+		<div class="box">
+			miuser@user.cl
+		</div>
+	</div>
+</div>
+<div class="col-left">
+	<h1>Webmail</h1>
+	<a href="nuevo-mensaje.html"  class="active">Nuevo mensaje</a>
+	<a href="index.html">Bandeja de entrada</a>
+</div>
+<div class="col-right">
+	<h2>Nuevo mensaje</h2>
+	<form id="nuevo" action="">
+		<label for="asunto">Asunto:</label>
+		<input id="asunto" type="text">
+		<div class="clear"></div>
+		<label for="correo">Para:</label>
+		<select multiple id="correo">
+		  <option value="1">carlos@gmail.com</option>
+		  <option value="2">juan@gmail.com</option>
+		  <option value="3">pedro@gmail.com</option>
+		  <option value="4">diego@gmail.com</option>
+		  <option value="5">carlos@gmail.com</option>
+		  <option value="6">juan@gmail.com</option>
+		  <option value="7">pedro@gmail.com</option>
+		  <option value="8">diego@gmail.com</option>
+		  <option value="9">carlos@gmail.com</option>
+		  <option value="10">juan@gmail.com</option>
+		  <option value="11">pedro@gmail.com</option>
+		  <option value="12">diego@gmail.com</option>
+		</select>
+		<p class="chico">Mantenga presionado el botón Ctrl (Windows) / Comando (Mac) para seleccionar múltiples opciones.</p>
+		<div class="adjoined-bottom">
+			<div class="grid-container">
+				<div class="grid-width-100">
+					<div id="editor">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="submit" value="Enviar">
+	</form>
+</div>	
+<script>
+	initSample();
+</script>
+</body>
+</html> 

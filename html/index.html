@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webmail</title>
+	<script src="js/editor/ckeditor.js"></script>
+	<script src="js/editor/sample.js"></script>
+	<link rel="stylesheet" href="js/editor/samples.css">
+	<link rel="stylesheet" href="js/editor/neo.css">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<div id="top">
+	<div class="user">
+		<div class="box">
+			miuser@user.cl
+		</div>
+	</div>
+</div>
+<div class="col-left">
+	<h1>Webmail</h1>
+	<a href="nuevo-mensaje.html">Nuevo mensaje</a>
+	<a href="index.html"  class="active">Bandeja de entrada</a>
+</div>
+<div class="col-right">
+	<h2>Bandeja de entrada</h2>
+	<form id="nuevo" action="">
+		<label for="asunto">Buscador:</label>
+		<input id="asunto" type="text">
+		<div class="clear"></div>
+		<label for="correo">Filtrar por:</label>
+		<select id="correo">
+		  <option value="1">Fecha</option>
+		  <option value="2">Nombre</option>
+		  <option value="3">Numero de participantes</option>
+		  <option value="4">Etc</option>
+		</select>
+		
+		<!-- <div class="adjoined-bottom">
+			<div class="grid-container">
+				<div class="grid-width-100">
+					<div id="editor">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="submit" value="Enviar"> -->
+		
+	</form>
+	<div class="listado">
+		<a class="box" href="conversacion.html">
+			<div class="user"></div>
+			<p class="asunto">Reunión para el dia jueves</p>
+			<p class="de">para: carlos@gmail.com, diego@gmail.com</p>		
+		</a>
+		<a class="box" href="conversacion.html">
+			<div class="user"></div>
+			<p class="asunto">Reunión para el dia jueves</p>
+			<p class="de">para: carlos@gmail.com, diego@gmail.com</p>		
+		</a>
+		<a class="box" href="conversacion.html">
+			<div class="user"></div>
+			<p class="asunto">Reunión para el dia jueves</p>
+			<p class="de">para: carlos@gmail.com, diego@gmail.com</p>		
+		</a>
+		<a class="box" href="conversacion.html">
+			<div class="user"></div>
+			<p class="asunto">Reunión para el dia jueves</p>
+			<p class="de">para: carlos@gmail.com, diego@gmail.com</p>		
+		</a>
+		<a class="box" href="conversacion.html">
+			<div class="user"></div>
+			<p class="asunto">Reunión para el dia jueves</p>
+			<p class="de">para: carlos@gmail.com, diego@gmail.com</p>		
+		</a>
+
+	</div>
+</div>	
+<script>
+	initSample();
+</script>
+</body>
+</html> 
